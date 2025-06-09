@@ -2,6 +2,7 @@ var display = document.getElementById("display");
 const canvas = document.getElementById("gameCanvas");
 const jeorge = document.getElementById("jeorge");
 const exploson = document.getElementById("explosion");
+const bullet = document.getElementById("bullet");
 
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -91,8 +92,12 @@ function startGame() {
 }
 
 function drawBullet() {
-    ctx.drawImage(explosion, lastClickX - 50, lastClickY - 50, 100, 100);
+  ctx.drawImage(bullet, lastClickX 0, lastClickY- 50, 100, 100);
 }
+
+// function drawExplosion() {
+//   ctx.drawImage(explosion, tickX+25, tickY+25, 100, 100);
+// }
 
 function drawJoerge() {
   
