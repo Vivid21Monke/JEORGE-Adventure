@@ -77,7 +77,7 @@ document.addEventListener('mousemove', function(event) {
     rotation = Math.atan2(mouseY - (tickY + 50), mouseX - (tickX + 50));
     ctx.beginPath();
     ctx.moveTo(tickX+50, tickY+50);
-    ctx.lineTo(mouseX, mouseY);
+    ctx.lineTo(mouseX+25, mouseY+33);
     ctx.stroke();
 });
 
@@ -92,7 +92,7 @@ function startGame() {
 }
 
 function drawBullet() {
-  ctx.drawImage(bullet, lastClickX 0, lastClickY- 50, 100, 100);
+  ctx.drawImage(bullet, lastClickX -50, lastClickY- 50, 100, 100);
 }
 
 // function drawExplosion() {
